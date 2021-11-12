@@ -1,5 +1,6 @@
 package com.fabiocarballo.designsystem.internal
 
+import android.os.Build
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.test.junit4.createComposeRule
 import com.fabiocarballo.designsystem.foundation.Theme
@@ -51,7 +52,7 @@ abstract class DesignSystemScreenshotTest : ScreenshotTest {
             )
         }
 
-        val name = "${testName.methodName}_${themeMode.name.lowercase()}"
+        val name = "${testName.methodName}_${themeMode.name.lowercase()}_${Build.MODEL}"
 
         compareScreenshot(
             rule = composeTestRule,
