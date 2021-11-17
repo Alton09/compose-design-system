@@ -17,7 +17,7 @@ class TypographyTest : DesignSystemScreenshotTest() {
 
     @Test
     fun display() = runScreenshotTest {
-        TestDummy(text = "This is a display.", style = Theme.typography.displayLarge)
+        TestDummy(text = "This is a new display.", style = Theme.typography.displayLarge)
     }
 
     @Test
